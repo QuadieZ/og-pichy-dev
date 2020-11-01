@@ -1,1 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pichyapa.Kh</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="icon" href="./assets/icon.svg" />
+    <link href="github/github-widget.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="div-title">
+      <img src="./assets/pixelme.png" alt="pixelart" id="easter"/>
+      <h1 class="title">Hello World!</h1>
+      <p>Scroll Down to start the adventure</p>
+    </div>
 
+    <section class="image"></section>
+
+    <div class="container">
+      <nav class="navbar-container" id="navbar">
+        <a class="navbar-brand" href="#"
+          ><img src="./assets/icon.svg" width="30" height="30" alt=""
+        /></a>
+        <div class="navbar-menu">
+          <ul class="navbar-links">
+            <li class="navbar-item">
+              <a class="navbar-link" href="#about">About Me</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="#projects">Projects</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="content">
+        <section class="about" id="about">
+          <div class="about-image">
+            <img src="./assets/about.jpg" alt="mypicture" />
+          </div>
+          <div class="about-content">
+            <h1 id="about-title">It's me, Pichyapa Khanapattawong.</h1>
+            <p>
+              Hi! I'm a soon-to-graduate high school student who's determined to
+              be a <font style="color:#ffd89e">computer engineering student</font> at <font style="color:#ffd89e">KMUTT</font>. I'm a learning
+              developer who's particularly interested in <font style="color:#ffd89e">web development, game
+              development, and IoT</font>. Though I'm more than willing to learn other
+              things as well. I'm also a <font style="color:#ffd89e">self-taught artist, a designer, and a
+              baker</font>. I love to try new things and <font style="color:#ffd89e">live my life to the fullest</font>.
+            </p>
+            
+          </div>
+        </section>
+        <div class="timer">
+          <h3 id="timer"></h3>
+          <p>Until KMUTT early interview round result</p>
+        </div>
+        <section id="projects">
+          <h1 id="project-title">Recent Projects</h1>
+          <div class="github-widget" data-user="QuadieZ" data-options='{"sortBy":"name", "limit":6}'></div>
+          <div class="buttons">
+            <button onclick="window.open('https://github.com/QuadieZ')">See More on GitHub</button>
+            <button
+              class="port"
+              onclick="window.open('https://drive.google.com/file/d/1t7eASEU1-G2XyxMno_PYBPN1MkqhwYWA/view?usp=sharing')"
+            >
+              See My Portfolio
+            </button>
+            <button onclick="window.open('https://drive.google.com/drive/folders/1QXqD2HUpsVhSOBOxgWPq_o2260lJchw-?usp=sharing')">Arts & Design</button>
+          </div>
+        </section>
+
+        <section id="contacts">
+          <div class="contact-content">
+          <h1 id="contact">
+            Contact Me!
+          </h1>
+          <div class="swiper-container" id="contact-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./assets/facebook.svg" alt="facebook" onclick="window.open('https://www.facebook.com/pichyapa.khanapattanawong.3/')"></div>
+              <div class="swiper-slide"><img src="./assets/github.svg" alt="github" onclick="window.open('https://github.com/QuadieZ')"></div>
+              <div class="swiper-slide"><img src="./assets/instagram.svg" alt="instagram" onclick="window.open('https://www.instagram.com/phpich.10/')"></div>
+              <div class="swiper-slide"><img src="./assets/linkedin.svg" alt="linkedin" onclick="window.open('https://www.linkedin.com/in/pichyapa-khanapattanawong/')"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
+        <div class="back">
+        <a href="#top">Back To Top</a>
+      </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="github/github-widget.min.js"></script>
+    <script>
+       var swiper1 = new Swiper('#contact-swiper', {
+      effect: 'cube',
+      grabCursor: true,
+      cubeEffect: {
+        shadow: true,
+
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
+      loop:true,    
+      pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+      },  
+    });
+    </script>
+  </body>
+</html>
