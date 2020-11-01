@@ -113,6 +113,36 @@ button:hover {
   font-weight: 600;
 }
 
+.ham {
+  display: none;
+ 
+}
+
+.hamnav {
+  display: none;
+  width: 100%;
+  background-color: #f9f3df;
+  padding:1vh;
+  position: absolute;
+  z-index: 4;
+}
+
+.hamul {
+  list-style-type: none;
+}
+
+.hamnav ul li {
+  border-top: #b4b2aa 2px solid;
+  margin: 1vh 0;
+  text-align: center;
+}
+
+.hamnav ul li a {
+  color:  #100321;
+  text-decoration: none;
+  margin-top:2vh;
+  display: block;
+}
 section.image {
   position: fixed;
   top: 0;
@@ -276,7 +306,20 @@ section.about img {
   }
 
   .buttons button {
-      height: 12vh;
+      height: 13vh;
       width: auto;
+
+  }
+
+  .navbar-menu {
+    display: none;
+  }
+
+  .ham {
+    display: block;
+  }
+
+  .navbar-container {
+    position: relative;
   }
 }

@@ -4,6 +4,16 @@ window.addEventListener('scroll',() => {
     sc.style.clipPath = "circle(" + y + "px at center)"
 })
 
+let ham = document.getElementById('ham')
+let hamnav = document.getElementById('hamnav')
+ham.onclick = () => {
+    if (hamnav.style.display === '') {
+        hamnav.style.display = 'block'
+    } else {
+        hamnav.style.display = ''
+    }
+}
+
 let interDate = new Date("Nov 6, 2020").getTime()
 
 let x = setInterval(() => {
