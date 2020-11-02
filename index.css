@@ -341,8 +341,4 @@ section.about img {
   }
 }
 
-@media screen and (max-width: 991px ) and (min-width:797px ){
-  section.image {
-    background-size: contain;
-  }
-  }
+
