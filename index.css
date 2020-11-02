@@ -94,7 +94,7 @@ section.image {
   background: url("./assets/me.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   clip-path: circle(0px at center);
   background-position: center;
 }
