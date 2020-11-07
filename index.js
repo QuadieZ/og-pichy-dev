@@ -14,7 +14,7 @@ ham.onclick = () => {
     }
 }
 
-let interDate = new Date("Nov 6, 2020").getTime()
+let interDate = new Date("Nov 16, 2020").getTime()
 
 let x = setInterval(() => {
     let now = new Date().getTime();
@@ -28,6 +28,12 @@ let x = setInterval(() => {
     let timer = document.getElementById('timer')
     timer.innerHTML = days + " Days " + hours + " Hours " + minutes + " Mins " + seconds + " Secs " 
 })
+
+if (d < 0) {
+    clearInterval(x);
+    timer.innerHTML = "Good Luck on the interview :)";
+  }
+}, 1000);
 
 let snd = new Audio("./assets/yay.mp3"); // buffers automatically when created
 snd.play();
