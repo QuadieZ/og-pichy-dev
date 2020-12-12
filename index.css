@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 :root {
-    --swiper-theme-color: #fe7520;
+  --swiper-theme-color: #fe7520;
 }
 body {
   background: linear-gradient(
@@ -72,8 +72,8 @@ button:hover {
 }
 
 .div-title img:active {
-    transform: translateY(-3vh);
-  }
+  transform: translateY(-3vh);
+}
 
 .title {
   font-size: 2.2em;
@@ -129,14 +129,13 @@ section.image {
 
 .ham {
   display: none;
- 
 }
 
 .hamnav {
   display: none;
   width: 100%;
   background-color: #f9f3df;
-  padding:1vh;
+  padding: 1vh;
   position: absolute;
   z-index: 4;
 }
@@ -152,9 +151,9 @@ section.image {
 }
 
 .hamnav ul li a {
-  color:  #100321;
+  color: #100321;
   text-decoration: none;
-  margin-top:2vh;
+  margin-top: 2vh;
   display: block;
 }
 
@@ -168,7 +167,6 @@ section.image {
   padding: 7vh 5vh;
   padding-top: 10vh;
 }
-
 
 section.about {
   display: flex;
@@ -212,28 +210,28 @@ section.about img {
 }
 
 #projects {
-    margin-top: 14vh;
+  margin-top: 14vh;
 }
 
 #projects h1 {
-    margin-bottom: 3vh;
+  margin-bottom: 3vh;
 }
 
 .buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top:4vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4vh;
 }
 
 .buttons button {
-    margin: 0 2vh;
-    width:30vh;
+  margin: 0 2vh;
+  width: 30vh;
 }
 #contacts {
-    margin-top:15vh;
-    margin-bottom: 5vh;
+  margin-top: 15vh;
+  margin-bottom: 5vh;
 }
 .contact-content {
   display: flex;
@@ -254,32 +252,87 @@ section.about img {
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  background-color:#f9f3df;
+  background-color: #f9f3df;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .swiper-slide img {
-    height: 70%;
+  height: 70%;
 }
 #contact {
   font-size: 4vh;
 }
 
 .back {
-    text-align: center;
-    margin-top: 12vh;
+  text-align: center;
+  margin-top: 12vh;
 }
 
 .back a {
-    color:white
+  color: white;
+}
+
+section.education {
+  height: 30vw;
+  display: flex;
+  align-items: center;
+  padding:3vh 0;
+}
+
+section.education svg {
+  height: 120%;
+
+  flex:1.5;
+}
+
+.details-landscape {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  flex:2;
+  position: relative;
+  padding-left:5vw;
+}
+
+.details-portrait {
+  display:none;
+}
+
+.details-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.details-header h1 {
+  font-size: 2rem;
+}
+
+.details-header p {
+  font-size: 1.2rem;
+  color:#9992a1;
+}
+
+.details-text {
+  margin-top:3%;
+  text-align: right;
+}
+
+.details-text p{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.hover:hover {
+  transform: translateY(-10px);
 }
 @media (orientation: portrait) {
-
-.content {
+  .content {
     padding-top: 5vh;
-}
+  }
   section.about {
     align-items: flex-start;
   }
@@ -308,7 +361,7 @@ section.about img {
 
   .buttons {
     flex-direction: column;
-  } 
+  }
 
   .buttons button {
     margin-bottom: 2vh;
@@ -336,9 +389,36 @@ section.about img {
     width: 38vh;
     border-radius: 50%;
     margin-bottom: 5vh;
+  }
 
+  section.education {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -6vh;
+  }
 
+  .details-landscape {
+    display: none;
+  }
+  
+  .details-portrait {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top:5vh;
+  }
+
+  .details-text {
+    text-align: center;
+  }
+  
+  .details-header {
+    align-items: center;
+  }
+  .details-header h1 {
+    font-size: 1.8rem;
   }
 }
-
-

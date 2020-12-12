@@ -14,7 +14,7 @@ ham.onclick = () => {
     }
 }
 
-let interDate = new Date("Nov 16, 2020").getTime()
+let interDate = new Date("Dec 20, 2020").getTime()
 
 let x = setInterval(() => {
     let now = new Date().getTime();
@@ -29,12 +29,10 @@ let x = setInterval(() => {
     timer.innerHTML = days + " Days " + hours + " Hours " + minutes + " Mins " + seconds + " Secs " 
     
     if (d < 0) {
-    clearInterval(x);
-    timer.innerHTML = "Good Luck on the interview :)";
-  }
-}, 1000);
-
-
+        clearInterval(x);
+        timer.innerHTML = "Good Luck on the admission :)";
+      }
+    }, 1000);
 
 let snd = new Audio("./assets/yay.mp3"); // buffers automatically when created
 snd.play();
@@ -42,4 +40,25 @@ snd.play();
 let easter = document.getElementById('easter')
 easter.onclick = () => {
     snd.play();
+}
+
+const det1 = document.getElementById('det1')
+const det2 = document.getElementById('det2')
+let m;
+
+const educationDetail = (s) => {
+    console.log(s)
+    if (s === 'uni') {
+        m = "I see that KMUTT is one of the top-ranking universities in engineering in Thailand. I feel that I could learn a lot and improve myself by leaps and bounds if I’m given an opportunity to study here."  
+    } else if (s === 'kinder') {
+        m = 'I studied at Thampirak School during my kindergarten years'
+    } else if (s === 'high') {
+        m = "I chose science-math programme, Khemasiri Memorial School for high school. I'm currently studying in year 12 with current total GPAX of 4.00. I started to participated in camps and competitions during high school."
+    } else if (s === 'junior') {
+        m = 'I continued to study at Khemasiri Memorial School. I graduated year 9 with 4.00. I also scored 100 on Year 9 Engling O-NET examination.'
+    } else if (s === 'prim') {
+        m = 'I moved to Khemasiri Memorial School for primary school. I graduated year 6 with the grade of 3.76. I also scored 100 on Year 6 English O-NET examination.'
+    }
+    det1.innerHTML = m
+    det2.innerHTML = m
 }
