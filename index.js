@@ -1,3 +1,7 @@
+window.onload = () => {
+    console.log('hi')
+}
+
 const sc = document.querySelector('section');
 window.addEventListener('scroll',() => {
     let y = window.scrollY;
