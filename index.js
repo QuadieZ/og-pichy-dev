@@ -18,7 +18,7 @@ ham.onclick = () => {
     }
 }
 
-let interDate = new Date("Dec 20, 2020").getTime()
+let interDate = new Date("Jan 23, 2021").getTime()
 
 let x = setInterval(() => {
     let now = new Date().getTime();
@@ -34,7 +34,7 @@ let x = setInterval(() => {
     
     if (d < 0) {
         clearInterval(x);
-        timer.innerHTML = "Good Luck on the admission :)";
+        timer.innerHTML = "Good Luck on the interview :)";
       }
     }, 1000);
 
