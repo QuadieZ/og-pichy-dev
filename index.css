@@ -17,11 +17,10 @@ body {
       #262555 25%,
       #100321 35%
     ),
-    #09e0e0;
+    #100321;
   background-size: 100vh;
   font-family: "Quicksand", sans-serif;
   color: white;
-  overflow: hidden;
 }
 
 h1,
