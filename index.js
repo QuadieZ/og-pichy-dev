@@ -53,7 +53,7 @@ let m;
 const educationDetail = (s) => {
     console.log(s)
     if (s === 'uni') {
-        m = "I see that KMUTT is one of the top-ranking universities in engineering in Thailand. I feel that I could learn a lot and improve myself by leaps and bounds if I’m given an opportunity to study here."  
+        m = "I'm excited to be challenged and thriving in my dream university. Starting 9 August 2021"  
     } else if (s === 'kinder') {
         m = 'I studied at Thampirak School during my kindergarten years'
     } else if (s === 'high') {
