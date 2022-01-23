@@ -1,9 +1,5 @@
-window.onload = () => {
-    console.log('hi')
-}
-
 const sc = document.querySelector('section');
-window.addEventListener('scroll',() => {
+window.addEventListener('scroll', () => {
     let y = window.scrollY;
     sc.style.clipPath = "circle(" + y + "px at center)"
 })
@@ -18,26 +14,6 @@ ham.onclick = () => {
     }
 }
 
-let interDate = new Date("Jan 23, 2021").getTime()
-
-let x = setInterval(() => {
-    let now = new Date().getTime();
-    let d = interDate - now;
-
-    let days = Math.floor(d / (1000 * 60 * 60 * 24));
-    let hours = Math.floor((d % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    let minutes = Math.floor((d % (1000 * 60 * 60)) / (1000 * 60));
-    let seconds = Math.floor((d % (1000 * 60)) / 1000);
-
-    let timer = document.getElementById('timer')
-    timer.innerHTML = days + " Days " + hours + " Hours " + minutes + " Mins " + seconds + " Secs " 
-    
-    if (d < 0) {
-        clearInterval(x);
-        timer.innerHTML = "Good Luck on the interview :)";
-      }
-    }, 1000);
-
 let snd = new Audio("./assets/yay.mp3"); // buffers automatically when created
 snd.play();
 
@@ -51,9 +27,8 @@ const det2 = document.getElementById('det2')
 let m;
 
 const educationDetail = (s) => {
-    console.log(s)
     if (s === 'uni') {
-        m = "I'm excited to be challenged and thriving in my dream university. Starting 9 August 2021"  
+        m = "I'm excited to be challenged and thriving in my dream university. Starting 9 August 2021"
     } else if (s === 'kinder') {
         m = 'I studied at Thampirak School during my kindergarten years'
     } else if (s === 'high') {
