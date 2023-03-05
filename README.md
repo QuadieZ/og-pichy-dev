@@ -5,9 +5,6 @@ The first, original version of pichy.dev
 ## Stack
 - HTML, CSS, JS
 
-## Deploy
-https://kinkaow.netlify.app/
-
 ## About the Project
 
 This project was built after a few months in website development. \
